@@ -308,7 +308,7 @@ def check_setup():
                    our_python_version + "! Check your MORSE build configuration"
                    " or the selected Blender version.")
             if 'MORSE_SILENT_PYTHON_CHECK' not in os.environ:
-                raise MorseError("Bad Python version")
+                print("Possibly bad Python version")
         else:
             logger.info("Blender and Morse are using Python " + \
             python_version + ". Alright.")
